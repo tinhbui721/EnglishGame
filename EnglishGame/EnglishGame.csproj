@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6C88D15-C96D-4F0F-8C3C-AABD821DE992}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EnglishGame</RootNamespace>
+    <AssemblyName>EnglishGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animal.Designer.cs">
+      <DependentUpon>Animal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clothes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clothes.Designer.cs">
+      <DependentUpon>Clothes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="Device.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device.Designer.cs">
+      <DependentUpon>Device.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fruit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fruit.Designer.cs">
+      <DependentUpon>Fruit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandleFile.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rank.Designer.cs">
+      <DependentUpon>Rank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Topic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Topic.Designer.cs">
+      <DependentUpon>Topic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vocabulary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vocabulary.Designer.cs">
+      <DependentUpon>Vocabulary.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Animal.resx">
+      <DependentUpon>Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clothes.resx">
+      <DependentUpon>Clothes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device.resx">
+      <DependentUpon>Device.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fruit.resx">
+      <DependentUpon>Fruit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rank.resx">
+      <DependentUpon>Rank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topic.resx">
+      <DependentUpon>Topic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vocabulary.resx">
+      <DependentUpon>Vocabulary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Animal\cat.png" />
+    <Content Include="Resources\Animal\cat_small.png" />
+    <Content Include="Resources\Animal\dog.png" />
+    <Content Include="Resources\Animal\dog_small.png" />
+    <Content Include="Resources\Animal\fox.png" />
+    <Content Include="Resources\Animal\fox_small.png" />
+    <Content Include="Resources\Animal\giraffe.png" />
+    <Content Include="Resources\Animal\giraffe_small.png" />
+    <Content Include="Resources\Animal\horse.png" />
+    <Content Include="Resources\Animal\horse_small.png" />
+    <Content Include="Resources\Animal\leopard.png" />
+    <Content Include="Resources\Animal\leopard_small.png" />
+    <Content Include="Resources\Animal\lion.png" />
+    <Content Include="Resources\Animal\lion_small.png" />
+    <Content Include="Resources\Animal\monkey.png" />
+    <Content Include="Resources\Animal\monkey_small.png" />
+    <Content Include="Resources\Animal\rabbit.png" />
+    <Content Include="Resources\Animal\rabbit_small.png" />
+    <Content Include="Resources\Animal\rhino.png" />
+    <Content Include="Resources\Animal\rhino_small.png" />
+    <Content Include="Resources\Animal\squirrel.png" />
+    <Content Include="Resources\Animal\squirrel_small.png" />
+    <Content Include="Resources\Animal\tiger.png" />
+    <Content Include="Resources\Animal\tiger_small.png" />
+    <Content Include="Resources\background.jpg" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\Clothes\cap.png" />
+    <Content Include="Resources\Clothes\dress.png" />
+    <Content Include="Resources\Clothes\dressing-Gowm.png" />
+    <Content Include="Resources\Clothes\jacket.png" />
+    <Content Include="Resources\Clothes\jeans.png" />
+    <Content Include="Resources\Clothes\jumper.png" />
+    <Content Include="Resources\Clothes\pyjamas.png" />
+    <Content Include="Resources\Clothes\raincoat.png" />
+    <Content Include="Resources\Clothes\skirt.png" />
+    <Content Include="Resources\Clothes\sneakers.png" />
+    <Content Include="Resources\Clothes\socks.png" />
+    <Content Include="Resources\Clothes\t_shirt.png" />
+    <Content Include="Resources\Device\camera.png" />
+    <Content Include="Resources\Device\camera_small.png" />
+    <Content Include="Resources\Device\clock.png" />
+    <Content Include="Resources\Device\clock_small.png" />
+    <Content Include="Resources\Device\computer.png" />
+    <Content Include="Resources\Device\computer_small.png" />
+    <Content Include="Resources\Device\fan.png" />
+    <Content Include="Resources\Device\fan_small.png" />
+    <Content Include="Resources\Device\head_phone.png" />
+    <Content Include="Resources\Device\head_phone_small.png" />
+    <Content Include="Resources\Device\laptop.png" />
+    <Content Include="Resources\Device\laptop_small.png" />
+    <Content Include="Resources\Device\mobile_phone.png" />
+    <Content Include="Resources\Device\mobile_phone_small.png" />
+    <Content Include="Resources\Device\printer.png" />
+    <Content Include="Resources\Device\printer_small.png" />
+    <Content Include="Resources\Device\projector.png" />
+    <Content Include="Resources\Device\projector_small.png" />
+    <Content Include="Resources\Device\scanner.png" />
+    <Content Include="Resources\Device\scanner_small.png" />
+    <Content Include="Resources\Device\speaker.png" />
+    <Content Include="Resources\Device\speaker_small.png" />
+    <Content Include="Resources\Device\watch.png" />
+    <Content Include="Resources\Device\watch_small.png" />
+    <Content Include="Resources\english_for_kid.png" />
+    <Content Include="Resources\Fruit\apple.png" />
+    <Content Include="Resources\Fruit\apple_small.png" />
+    <Content Include="Resources\Fruit\banana.png" />
+    <Content Include="Resources\Fruit\banana_small.png" />
+    <Content Include="Resources\Fruit\coconut.png" />
+    <Content Include="Resources\Fruit\coconut_small.png" />
+    <Content Include="Resources\Fruit\dragon_fruit.png" />
+    <Content Include="Resources\Fruit\dragon_fruit_small.png" />
+    <Content Include="Resources\Fruit\durian.png" />
+    <Content Include="Resources\Fruit\durian_small.png" />
+    <Content Include="Resources\Fruit\grape.png" />
+    <Content Include="Resources\Fruit\grapefruit.png" />
+    <Content Include="Resources\Fruit\grapefruit_small.png" />
+    <Content Include="Resources\Fruit\grape_small.png" />
+    <Content Include="Resources\Fruit\guava.png" />
+    <Content Include="Resources\Fruit\guava_small.png" />
+    <Content Include="Resources\Fruit\melon.png" />
+    <Content Include="Resources\Fruit\melon_small.png" />
+    <Content Include="Resources\Fruit\orange.png" />
+    <Content Include="Resources\Fruit\orange_small.png" />
+    <Content Include="Resources\Fruit\strawberry.png" />
+    <Content Include="Resources\Fruit\strawberry_small.png" />
+    <Content Include="Resources\Fruit\watermelon.png" />
+    <Content Include="Resources\Fruit\watermelon_small.png" />
+    <Content Include="Resources\rank.jpg" />
+    <Content Include="Resources\start.png" />
+    <Content Include="Resources\vocab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="File\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
